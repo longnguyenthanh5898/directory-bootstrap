@@ -17,3 +17,36 @@ setInterval(function() {
         ++counter; //iterate to next image
     }
 }, 5000);
+
+// ====================================
+var width =backgroundImage.offsetWidth 
+let widthB1000 = true
+
+if(width > 1000){
+  var befReload = true;
+    curReload = true
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 2,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+ 
+      
+      
+}
+else if(700 < width < 1001){
+    curReload = false
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 2,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    
+} 
+

@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="./style.css" rel="stylesheet">
     <link href="./responsive.css" rel="stylesheet">
@@ -13,8 +18,9 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg bg-light fixed-top bg-white">
+  <div class="myWrapper">
+      <!-- nav bar -->
+      <nav class="navbar navbar-expand-lg bg-light fixed-top bg-white">
         <div class="container-fluid">
             <!-- left navbar -->
             <div class="d-flex align-items-center">
@@ -245,56 +251,122 @@
           <!-- guides slide -->
           <div class="container-fluid">
             <div class="row">
-                <div id="guides" class="col h-auto px-2 col-lg-3 col-md-6 col-12">
-                  <div class="guides-box card card-poster gradient-overlay hover-animate mb-4 mb-lg-0">
-                    <img class="bg-image" src="https://d19m59y37dris4.cloudfront.net/directory/2-0-1/img/photo/new-york.jpg" alt="Card image">
-                      <div class="card-body overlay-content guides-slide">
-                        <h6 class="card-title text-shadow text-uppercase">New York</h6>
-                        <p class="card-text text-sm">The big apple</p>
-                      </div>
+              <div class="swiper mySwiper">
 
-                  </div>
-                </div>
-                <div id="guides" class="col h-auto px-2 col-lg-3 col-md-6 col-12">
-                  <div class="guides-box card card-poster gradient-overlay hover-animate mb-4 mb-lg-0 ">
-                    <img class="bg-image" src="https://d19m59y37dris4.cloudfront.net/directory/2-0-1/img/photo/paris.jpg" alt="Card image">
-                      <div class="card-body overlay-content guides-slide">
-                        <h6 class="card-title text-shadow text-uppercase">Paris</h6>
-                        <p class="card-text text-sm">Artist capital of Europe</p>
+                  <div class="swiper-wrapper">
+                    <div id="guides" class=" swiper-slide col h-auto px-2 col-lg-3 col-md-6 col-12">
+                      <div class="guides-box card card-poster gradient-overlay hover-animate mb-4 mb-lg-0">
+                        <img class="bg-image" src="https://d19m59y37dris4.cloudfront.net/directory/2-0-1/img/photo/new-york.jpg" alt="Card image">
+                          <div class="card-body overlay-content guides-slide">
+                            <h6 class="card-title text-shadow text-uppercase">New York</h6>
+                            <p class="card-text text-sm">The big apple</p>
+                          </div>
+    
                       </div>
-
-                  </div>
-                </div>
-                <div id="guides" class="col h-auto px-2 col-lg-3 col-md-6 col-12">
-                  <div class="guides-box card card-poster gradient-overlay hover-animate mb-4 mb-lg-0">
-                    <img class="bg-image" src="https://d19m59y37dris4.cloudfront.net/directory/2-0-1/img/photo/barcelona.jpg" alt="Card image">
-                      <div class="card-body overlay-content guides-slide">
-                        <h6 class="card-title text-shadow text-uppercase">Barcelona</h6>
-                        <p class="card-text text-sm">Dalí, Gaudí, Barrio Gotico</p>
+                    </div>
+    
+                    <div id="guides" class=" swiper-slide col h-auto px-2 col-lg-3 col-md-6 col-12">
+                      <div class="guides-box card card-poster gradient-overlay hover-animate mb-4 mb-lg-0 ">
+                        <img class="bg-image" src="https://d19m59y37dris4.cloudfront.net/directory/2-0-1/img/photo/paris.jpg" alt="Card image">
+                          <div class="card-body overlay-content guides-slide">
+                            <h6 class="card-title text-shadow text-uppercase">Paris</h6>
+                            <p class="card-text text-sm">Artist capital of Europe</p>
+                          </div>
+    
                       </div>
-
-                  </div>
-                </div>
-                <div id="guides" class="col h-auto px-2 col-lg-3 col-md-6 col-12">
-                  <div class="guides-box card card-poster gradient-overlay hover-animate mb-4 mb-lg-0">
-                    <img class="bg-image" src="https://d19m59y37dris4.cloudfront.net/directory/2-0-1/img/photo/prague.jpg" alt="Card image">
-                      <div class="card-body overlay-content guides-slide">
-                        <h6 class="card-title text-shadow text-uppercase">Prague</h6>
-                        <p class="card-text text-sm">City of hundred towers</p>
+                    </div>
+    
+                    <div id="guides" class=" swiper-slide col h-auto px-2 col-lg-3 col-md-6 col-12">
+                      <div class="guides-box card card-poster gradient-overlay hover-animate mb-4 mb-lg-0">
+                        <img class="bg-image" src="https://d19m59y37dris4.cloudfront.net/directory/2-0-1/img/photo/barcelona.jpg" alt="Card image">
+                          <div class="card-body overlay-content guides-slide">
+                            <h6 class="card-title text-shadow text-uppercase">Barcelona</h6>
+                            <p class="card-text text-sm">Dalí, Gaudí, Barrio Gotico</p>
+                          </div>
+    
                       </div>
-
-                  </div>
-                </div>
-                <!-- <div id="guides" class="col h-auto px-2">
-                  <div class="card card-poster gradient-overlay hover-animate mb-4 mb-lg-0">
-                    <img class="bg-image" src="https://d19m59y37dris4.cloudfront.net/directory/2-0-1/img/photo/barcelona.jpg" alt="Card image">
-                      <div class="card-body overlay-content guides-slide">
-                        <h6 class="card-title text-shadow text-uppercase">Barcelona</h6>
-                        <p class="card-text text-sm">Dalí, Gaudí, Barrio Gotico</p>
+                    </div>
+    
+                    <div id="guides" class=" swiper-slide col h-auto px-2 col-lg-3 col-md-6 col-12">
+                      <div class="guides-box card card-poster gradient-overlay hover-animate mb-4 mb-lg-0">
+                        <img class="bg-image" src="https://d19m59y37dris4.cloudfront.net/directory/2-0-1/img/photo/prague.jpg" alt="Card image">
+                          <div class="card-body overlay-content guides-slide">
+                            <h6 class="card-title text-shadow text-uppercase">Prague</h6>
+                            <p class="card-text text-sm">City of hundred towers</p>
+                          </div>
+    
                       </div>
+                    </div>
+    
+                    <div id="guides" class=" swiper-slide col h-auto px-2 col-lg-3 col-md-6 col-12">
+                      <div class="card card-poster gradient-overlay hover-animate mb-4 mb-lg-0">
+                        <img class="bg-image" src="https://d19m59y37dris4.cloudfront.net/directory/2-0-1/img/photo/barcelona.jpg" alt="Card image">
+                          <div class="card-body overlay-content guides-slide">
+                            <h6 class="card-title text-shadow text-uppercase">Barcelona</h6>
+                            <p class="card-text text-sm">Dalí, Gaudí, Barrio Gotico</p>
+                          </div>
+    
+                      </div>
+                    </div>
 
+                    <div id="guides" class=" swiper-slide col h-auto px-2 col-lg-3 col-md-6 col-12">
+                      <div class="guides-box card card-poster gradient-overlay hover-animate mb-4 mb-lg-0">
+                        <img class="bg-image" src="https://d19m59y37dris4.cloudfront.net/directory/2-0-1/img/photo/new-york.jpg" alt="Card image">
+                          <div class="card-body overlay-content guides-slide">
+                            <h6 class="card-title text-shadow text-uppercase">New York</h6>
+                            <p class="card-text text-sm">The big apple</p>
+                          </div>
+    
+                      </div>
+                    </div>
+    
+                    <div id="guides" class=" swiper-slide col h-auto px-2 col-lg-3 col-md-6 col-12">
+                      <div class="guides-box card card-poster gradient-overlay hover-animate mb-4 mb-lg-0 ">
+                        <img class="bg-image" src="https://d19m59y37dris4.cloudfront.net/directory/2-0-1/img/photo/paris.jpg" alt="Card image">
+                          <div class="card-body overlay-content guides-slide">
+                            <h6 class="card-title text-shadow text-uppercase">Paris</h6>
+                            <p class="card-text text-sm">Artist capital of Europe</p>
+                          </div>
+    
+                      </div>
+                    </div>
+    
+                    <div id="guides" class=" swiper-slide col h-auto px-2 col-lg-3 col-md-6 col-12">
+                      <div class="guides-box card card-poster gradient-overlay hover-animate mb-4 mb-lg-0">
+                        <img class="bg-image" src="https://d19m59y37dris4.cloudfront.net/directory/2-0-1/img/photo/barcelona.jpg" alt="Card image">
+                          <div class="card-body overlay-content guides-slide">
+                            <h6 class="card-title text-shadow text-uppercase">Barcelona</h6>
+                            <p class="card-text text-sm">Dalí, Gaudí, Barrio Gotico</p>
+                          </div>
+    
+                      </div>
+                    </div>
+    
+                    <div id="guides" class=" swiper-slide col h-auto px-2 col-lg-3 col-md-6 col-12">
+                      <div class="guides-box card card-poster gradient-overlay hover-animate mb-4 mb-lg-0">
+                        <img class="bg-image" src="https://d19m59y37dris4.cloudfront.net/directory/2-0-1/img/photo/prague.jpg" alt="Card image">
+                          <div class="card-body overlay-content guides-slide">
+                            <h6 class="card-title text-shadow text-uppercase">Prague</h6>
+                            <p class="card-text text-sm">City of hundred towers</p>
+                          </div>
+    
+                      </div>
+                    </div>
+    
+                    <div id="guides" class=" swiper-slide col h-auto px-2 col-lg-3 col-md-6 col-12">
+                      <div class="card card-poster gradient-overlay hover-animate mb-4 mb-lg-0">
+                        <img class="bg-image" src="https://d19m59y37dris4.cloudfront.net/directory/2-0-1/img/photo/barcelona.jpg" alt="Card image">
+                          <div class="card-body overlay-content guides-slide">
+                            <h6 class="card-title text-shadow text-uppercase">Barcelona</h6>
+                            <p class="card-text text-sm">Dalí, Gaudí, Barrio Gotico</p>
+                          </div>
+    
+                      </div>
+                    </div>
                   </div>
-                </div> -->
+
+              </div>
+                
             </div>
         </div>
           <!-- guides slide -->
@@ -735,10 +807,13 @@
         </section>
       <!-- the end section -->
 
+  </div>
 
 
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>

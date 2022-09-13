@@ -27,11 +27,20 @@
     .slide-title h1{
         font-size: 40px !important;
     }
+    #guides.swiper-slide{
+        width: 350px !important;
+        
+       
+    }
 }
 
 @media only screen and (min-width: 1200px){
     .display-3 {
         font-size: 4.5rem;
+    }
+    #guides.swiper-slide{
+        width: 250px !important;
+       
     }
     /* .company-logo{
         text-align: center !important;
