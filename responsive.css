@@ -1,0 +1,42 @@
+/* Moblies */
+
+@media only screen and (max-width: 991.98px){
+    .navbar-expand-lg .dropdown-menu {
+        margin-top: 0;
+        transition: transform .1s;
+        transform: translateY(0);
+        border: none;
+        box-shadow: none;
+    }
+    .company-logo{
+        text-align: center !important;
+    }
+    .company-name{
+        text-align: center !important;
+    }
+    .customer-avatar{
+        top: 0;
+        left: 50%;
+    }
+    .searching-row{
+        border-radius: 12px!important;
+    }
+    .slide-title{
+        text-align: center !important;
+    }
+    .slide-title h1{
+        font-size: 40px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .display-3 {
+        font-size: 4.5rem;
+    }
+    /* .company-logo{
+        text-align: center !important;
+    }
+    .company-name{
+        text-align: center !important;
+    } */
+}
